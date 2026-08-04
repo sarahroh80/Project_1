@@ -31,6 +31,12 @@ public class BookArrayExample {
             System.out.println();
         }
 
+        for (Book book : books) {
+            book.displayInfo();
+
+            System.out.println();
+        }
+
         System.out.println("Borrowing the second book:");
         books[1].borrowBook();
 
@@ -41,6 +47,12 @@ public class BookArrayExample {
         for (int i = 0; i < books.length; i++) {
             System.out.println("Book number " + (i + 1));
             books[i].displayInfo();
+            System.out.println();
+        }
+
+        for (Book book : books) {
+            book.displayInfo();
+
             System.out.println();
         }
     }
